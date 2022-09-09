@@ -1,0 +1,10 @@
+<h1>Food Results</h1>
+<h3>Number of Results: <%= @foods.count %><h3><br>
+<% @foods.each_with_index do |food, index| %>
+<div id ="foods<%= index %>">
+  <p>GTIN/UPC: <%= food.code %><p><br>
+  <p>Description: <%= food.description %><p><br>
+  <p>Brand Owners: <%= food.owners %><p><br>
+  <p>Ingredients: <%= food.ingredients %><p><br>
+</div>
+<% end %>
